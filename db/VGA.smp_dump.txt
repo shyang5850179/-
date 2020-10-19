@@ -1,0 +1,7 @@
+
+State Machine - |VGA|state_keypad
+Name state_keypad.011 state_keypad.010 state_keypad.001 state_keypad.000 
+state_keypad.000 0 0 0 0 
+state_keypad.001 0 0 1 1 
+state_keypad.010 0 1 0 1 
+state_keypad.011 1 0 0 1 

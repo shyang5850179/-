@@ -1,0 +1,245 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk_25M~reg0'
+Slack : -21.382
+TNS   : -574.813
+
+Type  : Slow 1100mV 85C Model Setup 'clk_scan_keypad'
+Slack : -8.715
+TNS   : -5775.886
+
+Type  : Slow 1100mV 85C Model Setup 'clk_1Hz'
+Slack : -7.301
+TNS   : -16.052
+
+Type  : Slow 1100mV 85C Model Setup 'horizontal~reg0'
+Slack : -4.512
+TNS   : -40.580
+
+Type  : Slow 1100mV 85C Model Setup 'clk_50MHz'
+Slack : -3.417
+TNS   : -143.917
+
+Type  : Slow 1100mV 85C Model Hold 'clk_scan_keypad'
+Slack : -2.983
+TNS   : -1903.144
+
+Type  : Slow 1100mV 85C Model Hold 'clk_50MHz'
+Slack : -2.107
+TNS   : -5.037
+
+Type  : Slow 1100mV 85C Model Hold 'clk_25M~reg0'
+Slack : -0.106
+TNS   : -0.185
+
+Type  : Slow 1100mV 85C Model Hold 'clk_1Hz'
+Slack : 0.489
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'horizontal~reg0'
+Slack : 1.353
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_scan_keypad'
+Slack : -0.724
+TNS   : -874.372
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_25M~reg0'
+Slack : -0.724
+TNS   : -102.851
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_50MHz'
+Slack : -0.724
+TNS   : -52.516
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'horizontal~reg0'
+Slack : -0.724
+TNS   : -10.251
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_1Hz'
+Slack : -0.724
+TNS   : -4.424
+
+Type  : Slow 1100mV 0C Model Setup 'clk_25M~reg0'
+Slack : -22.031
+TNS   : -575.734
+
+Type  : Slow 1100mV 0C Model Setup 'clk_scan_keypad'
+Slack : -8.594
+TNS   : -5682.228
+
+Type  : Slow 1100mV 0C Model Setup 'clk_1Hz'
+Slack : -7.407
+TNS   : -16.179
+
+Type  : Slow 1100mV 0C Model Setup 'horizontal~reg0'
+Slack : -4.255
+TNS   : -38.270
+
+Type  : Slow 1100mV 0C Model Setup 'clk_50MHz'
+Slack : -3.768
+TNS   : -142.977
+
+Type  : Slow 1100mV 0C Model Hold 'clk_scan_keypad'
+Slack : -3.143
+TNS   : -1983.674
+
+Type  : Slow 1100mV 0C Model Hold 'clk_50MHz'
+Slack : -1.999
+TNS   : -4.890
+
+Type  : Slow 1100mV 0C Model Hold 'clk_25M~reg0'
+Slack : -0.086
+TNS   : -0.094
+
+Type  : Slow 1100mV 0C Model Hold 'clk_1Hz'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'horizontal~reg0'
+Slack : 1.381
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_50MHz'
+Slack : -0.731
+TNS   : -52.822
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_scan_keypad'
+Slack : -0.724
+TNS   : -864.879
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_25M~reg0'
+Slack : -0.724
+TNS   : -104.718
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'horizontal~reg0'
+Slack : -0.724
+TNS   : -10.504
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_1Hz'
+Slack : -0.724
+TNS   : -4.411
+
+Type  : Fast 1100mV 85C Model Setup 'clk_25M~reg0'
+Slack : -9.104
+TNS   : -234.465
+
+Type  : Fast 1100mV 85C Model Setup 'clk_scan_keypad'
+Slack : -3.402
+TNS   : -2164.689
+
+Type  : Fast 1100mV 85C Model Setup 'clk_1Hz'
+Slack : -2.916
+TNS   : -5.838
+
+Type  : Fast 1100mV 85C Model Setup 'horizontal~reg0'
+Slack : -1.789
+TNS   : -16.097
+
+Type  : Fast 1100mV 85C Model Setup 'clk_50MHz'
+Slack : -1.500
+TNS   : -33.409
+
+Type  : Fast 1100mV 85C Model Hold 'clk_scan_keypad'
+Slack : -1.651
+TNS   : -983.634
+
+Type  : Fast 1100mV 85C Model Hold 'clk_50MHz'
+Slack : -0.769
+TNS   : -1.786
+
+Type  : Fast 1100mV 85C Model Hold 'clk_25M~reg0'
+Slack : -0.309
+TNS   : -0.615
+
+Type  : Fast 1100mV 85C Model Hold 'clk_1Hz'
+Slack : -0.028
+TNS   : -0.028
+
+Type  : Fast 1100mV 85C Model Hold 'horizontal~reg0'
+Slack : 0.649
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_50MHz'
+Slack : -0.573
+TNS   : -5.942
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_25M~reg0'
+Slack : -0.187
+TNS   : -6.419
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'horizontal~reg0'
+Slack : 0.018
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_scan_keypad'
+Slack : 0.050
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_1Hz'
+Slack : 0.162
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk_25M~reg0'
+Slack : -8.569
+TNS   : -214.911
+
+Type  : Fast 1100mV 0C Model Setup 'clk_scan_keypad'
+Slack : -3.081
+TNS   : -1959.798
+
+Type  : Fast 1100mV 0C Model Setup 'clk_1Hz'
+Slack : -2.785
+TNS   : -5.567
+
+Type  : Fast 1100mV 0C Model Setup 'horizontal~reg0'
+Slack : -1.666
+TNS   : -14.989
+
+Type  : Fast 1100mV 0C Model Setup 'clk_50MHz'
+Slack : -1.467
+TNS   : -28.982
+
+Type  : Fast 1100mV 0C Model Hold 'clk_scan_keypad'
+Slack : -1.668
+TNS   : -1008.277
+
+Type  : Fast 1100mV 0C Model Hold 'clk_50MHz'
+Slack : -0.760
+TNS   : -1.727
+
+Type  : Fast 1100mV 0C Model Hold 'clk_25M~reg0'
+Slack : -0.317
+TNS   : -0.616
+
+Type  : Fast 1100mV 0C Model Hold 'clk_1Hz'
+Slack : -0.069
+TNS   : -0.069
+
+Type  : Fast 1100mV 0C Model Hold 'horizontal~reg0'
+Slack : 0.617
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_50MHz'
+Slack : -0.556
+TNS   : -6.060
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_25M~reg0'
+Slack : -0.137
+TNS   : -4.369
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'horizontal~reg0'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_scan_keypad'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_1Hz'
+Slack : 0.161
+TNS   : 0.000
+
+------------------------------------------------------------

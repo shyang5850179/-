@@ -1,0 +1,107 @@
+module VGA(clk_50MHz,res_n,clk_250KHz,com_keypad,clk_scan_keypad,keyin,led,down);
+input clk_50MHz,res_n,down;
+input [3:0] keyin;
+output reg [4:0]led;
+output reg [3:0]com_keypad;	
+output reg clk_250KHz;
+output reg clk_scan_keypad;
+reg clk_1Hz;
+reg [18:0]scan_cnt_keypad;
+reg [3:0]keyin_reg; 
+reg [2:0]state_keypad;
+reg keyin_flag;
+reg [4:0]com_reg;
+reg[24:0]cnt;
+reg [3:0]delay=4'd0;
+always@(posedge clk_50MHz)//除頻成100Hz
+begin 
+	if(scan_cnt_keypad<250000)
+		scan_cnt_keypad =scan_cnt_keypad + 18'd1;
+	else begin
+		clk_scan_keypad = ~clk_scan_keypad; scan_cnt_keypad = 18'd0;
+	end
+end
+always@(posedge clk_50MHz)//除頻成1Hz
+begin 
+	if(cnt<25000000)
+		cnt =cnt + 25'd1;
+	else begin
+		clk_1Hz = ~clk_1Hz; cnt = 25'd0;
+	end
+end
+
+
+always@(posedge clk_scan_keypad or negedge res_n)//按鍵掃描
+begin
+	if(!res_n)
+		begin	state_keypad=4'd0;end
+	else
+			case(state_keypad)			
+				4'd0:begin com_keypad=4'b1110;state_keypad=4'd1;end
+				4'd1:begin com_keypad=4'b1101;state_keypad=4'd2;end
+				4'd2:begin com_keypad=4'b1011;state_keypad=4'd3;end
+				4'd3:begin com_keypad=4'b0111;state_keypad=4'd0;end	
+			endcase
+end
+always@(posedge clk_scan_keypad or negedge res_n)//按鍵輸入
+begin
+	if(!res_n) begin
+		keyin_reg=4'd0;
+		com_reg=4'd0;
+		delay=4'd0;
+	end	
+	else if(delay<1) begin
+			if(keyin<15) begin		
+				keyin_reg=keyin;
+				com_reg=com_keypad;	
+				keyin_flag=1'b1;
+				delay=4'd5;	
+			end		
+	end			
+	else begin
+		keyin_flag=1'b0;
+		if(delay>0)
+			delay=delay-4'd1;
+		else
+			delay=4'd0;
+	end	
+end
+
+always@(posedge keyin_flag or negedge res_n)//按鍵編碼
+begin
+	if(!res_n)begin		
+		led=~5'd0;
+	end	
+	else begin		
+				case({com_reg,keyin_reg})			
+							8'b1110_1110:begin end
+							8'b1110_1101:begin end
+							8'b1110_1011:begin end
+							8'b1110_0111:begin end
+							8'b1110_1111:begin end
+					
+							8'b1101_1110:begin end					
+							8'b1101_1101:begin end
+							8'b1101_1011:begin end
+							8'b1101_0111:begin end
+							8'b1101_1111:begin end
+					
+							8'b1011_1110:begin end
+							8'b1011_1101:begin end
+							8'b1011_1011:begin end
+							8'b1011_0111:begin end
+							8'b1011_1111:begin end	
+							
+							8'b0111_1110:begin end
+							8'b0111_1101:begin end
+							8'b0111_1011:begin end
+							8'b0111_0111:begin end
+							8'b0111_1111:begin end	
+							default:begin end
+				endcase	
+	end
+end
+
+
+
+endmodule
